@@ -17,18 +17,21 @@
             tools:tabGravity="center">
 
             <android.support.design.widget.TabItem
+                android:id="@+id/alarm_fragment"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:clickable="?attr/windowActionModeOverlay"
                 android:text="Alarm" />
 
             <android.support.design.widget.TabItem
+                android:id="@+id/timer_fragment"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:clickable="?attr/windowActionModeOverlay"
                 android:text="Timer" />
 
             <android.support.design.widget.TabItem
+                android:id="@+id/location_fragment"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:clickable="?attr/windowActionModeOverlay"

@@ -40,17 +40,17 @@ public class MainActivity extends AppCompatActivity {
                 switch (tab.getPosition()) {
                     case 0:
                         Fragment alarm = new AlarmFragment();
-                        transaction.replace(R.id.fragment, alarm);
+                        transaction.replace(R.id.alarm_fragment, alarm);
                         transaction.commit();
                         break;
                     case 1:
                         Fragment timer = new TimerFragment();
-                        transaction.replace(R.id.fragment, timer);
+                        transaction.replace(R.id.timer_fragment, timer);
                         transaction.commit();
                         break;
                     case 2:
                         Fragment location = new LocationFragment();
-                        transaction.replace(R.id.fragment, location);
+                        transaction.replace(R.id.location_fragment, location);
                         transaction.commit();
                         break;
                     }
@@ -61,6 +61,6 @@ public class MainActivity extends AppCompatActivity {
             public void onTabReselected(TabLayout.Tab tab) {}
             });
     }
-    }
-
 }
+
+
