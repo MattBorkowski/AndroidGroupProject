@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:layout_alignParentTop="false"
+    app:statusBarBackground="@color/colorPrimaryDark">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:weightSum="1">-->
+
+
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:textSize="20sp"-->
+    <!--android:lineSpacingExtra="8dp"-->
+    <!--android:text="Location Permission Not Granted"-->
+    <!--android:id="@+id/output"-->
+    <!--android:padding="@dimen/activity_horizontal_margin"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:textSize="20sp"-->
+    <!--android:lineSpacingExtra="8dp"-->
+    <!--android:text="Timer not started"-->
+    <!--android:id="@+id/output2"-->
+    <!--android:padding="@dimen/activity_horizontal_margin"-->
+    <!--/>-->
+
+    <!--<EditText-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:inputType="number"-->
+    <!--android:maxLength="18"-->
+    <!--android:ems="10"-->
+    <!--android:id="@+id/input" />-->
+
+
+    <!--</LinearLayout>-->
+</android.support.design.widget.CoordinatorLayout>
+
+
