@@ -5,6 +5,8 @@ import android.app.AlarmManager;
 
 import android.app.PendingIntent;
 
+import android.app.assist.AssistStructure;
+import android.content.Context;
 import android.content.Intent;
 
 import android.os.Bundle;
@@ -14,6 +16,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.view.View;
 
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TimePicker;
 
@@ -26,6 +30,10 @@ import java.util.Calendar;
 public class MainActivity extends AppCompatActivity
 
 {
+    cb=(CheckBox) findViewById(R.id.cb);
+    cb2=(CheckBox) findViewById(R.id.checkbox);
+    buton = (Button)findViewById(R.id.buton);
+    buton.setOnClickListener(this);
 
     TimePicker alarmTimePicker;
 
@@ -39,6 +47,8 @@ public class MainActivity extends AppCompatActivity
 
     {
 
+
+
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
@@ -49,6 +59,19 @@ public class MainActivity extends AppCompatActivity
 
 
     }
+
+    public void onClick(View arg0) {
+        Toast toast;
+        AssistStructure.ViewNode cb;
+        AssistStructure.ViewNode cb2;
+        if(cb.isChecked()&&cb2.isChecked()) toast = Toast.makeText(getApplicationContext(), "Text", Toast.LENGTH_SHORT).show();
+        else if(cb.isChecked()&&!cb2.isChecked()) toast = Toast.makeText(getApplicationContext(), "Text", Toast.LENGTH_SHORT).show();
+        else if(!cb.isChecked()&&cb2.isChecked()) toast = Toast.makeText(getApplicationContext(), "Text", Toast.LENGTH_SHORT).show();
+        else if(!cb.isChecked()&&!cb2.isChecked()) toast = Toast.makeText(getApplicationContext(), "Text", Toast.LENGTH_SHORT).show();
+
+
+    }
+
 
     public void OnToggleClicked(View view)
 
@@ -110,5 +133,6 @@ public class MainActivity extends AppCompatActivity
         }
 
     }
+
 
 }

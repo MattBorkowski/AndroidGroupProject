@@ -3,7 +3,7 @@ package it226.alm;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-//import com.example.exno11.R;
+
 
 public class AlarmReceiver extends AppCompatActivity {
 
